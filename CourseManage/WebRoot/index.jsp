@@ -4,7 +4,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 <html>
 <head>
-<title>双鱼林JSP基于SSH2教务选课成绩管理系统-首页</title>
+<title>教务报课成绩管理系统</title>
 <link href="<%=basePath %>css/index.css" rel="stylesheet" type="text/css" />
  </head>
 <body>
@@ -13,15 +13,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div id="globallink">
 		<ul>
 			<li><a href="<%=basePath %>index.jsp">首页</a></li>
-			<li><a href="<%=basePath %>CollegeInfo/CollegeInfo_FrontQueryCollegeInfo.action" target="OfficeMain">学院信息</a></li> 
-			<li><a href="<%=basePath %>SpecialFieldInfo/SpecialFieldInfo_FrontQuerySpecialFieldInfo.action" target="OfficeMain">专业信息</a></li> 
-			<li><a href="<%=basePath %>ClassInfo/ClassInfo_FrontQueryClassInfo.action" target="OfficeMain">班级信息</a></li> 
-			<li><a href="<%=basePath %>Student_QQ/Student_QQ_FrontQueryStudent_QQ.action" target="OfficeMain">学生信息</a></li> 
+			<%-- <li><a href="<%=basePath %>CollegeInfo/CollegeInfo_FrontQueryCollegeInfo.action" target="OfficeMain">学院信息</a></li> --%>
+		    <li><a href="<%=basePath %>SpecialFieldInfo/SpecialFieldInfo_FrontQuerySpecialFieldInfo.action" target="OfficeMain">专业信息</a></li> 
+			<%-- <li><a href="<%=basePath %>ClassInfo/ClassInfo_FrontQueryClassInfo.action" target="OfficeMain">班级信息</a></li> --%>
+			<%-- <li><a href="<%=basePath %>Student_QQ/Student_QQ_FrontQueryStudent_QQ.action" target="OfficeMain">学生信息</a></li> --%>
 			<li><a href="<%=basePath %>Teacher_QQ/Teacher_QQ_FrontQueryTeacher_QQ.action" target="OfficeMain">教师信息</a></li> 
 			<li><a href="<%=basePath %>CourseInfo_QQ/CourseInfo_QQ_FrontQueryCourseInfo_QQ.action" target="OfficeMain">课程信息</a></li> 
 			<li><a href="<%=basePath %>StudentSelectCourseInfo/StudentSelectCourseInfo_FrontQueryStudentSelectCourseInfo.action" target="OfficeMain">选课信息</a></li> 
-			<li><a href="<%=basePath %>ScoreInfo/ScoreInfo_FrontQueryScoreInfo.action" target="OfficeMain">成绩信息</a></li> 
-			<li><a href="<%=basePath %>News/News_FrontQueryNews.action" target="OfficeMain">新闻信息</a></li> 
+			<%-- <li><a href="<%=basePath %>ScoreInfo/ScoreInfo_FrontQueryScoreInfo.action" target="OfficeMain">成绩信息</a></li> --%>
+			<%-- <li><a href="<%=basePath %>News/News_FrontQueryNews.action" target="OfficeMain">新闻信息</a></li> --%>
 		</ul>
 		<br />
 	</div> 
