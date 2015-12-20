@@ -11,8 +11,8 @@ import org.hibernate.Transaction;
 import com.mysql.jdbc.Statement;
 import com.shuangyulin.utils.HibernateUtil;
 
-import com.shuangyulin.domain.Student_QQ;
-import com.shuangyulin.domain.CourseInfo_QQ;
+import com.shuangyulin.domain.Student_QQ287307421;
+import com.shuangyulin.domain.CourseInfo_QQ254540457;
 import com.shuangyulin.domain.ScoreInfo;
 
 public class ScoreInfoDAO {
@@ -57,7 +57,7 @@ public class ScoreInfoDAO {
     }
 
     /*查询ScoreInfo信息*/
-    public ArrayList<ScoreInfo> QueryScoreInfoInfo(Student_QQ studentNumber,CourseInfo_QQ courseNumber,int currentPage) { 
+    public ArrayList<ScoreInfo> QueryScoreInfoInfo(Student_QQ287307421 studentNumber,CourseInfo_QQ254540457 courseNumber,int currentPage) { 
         Session s = null; 
         try {
             s = HibernateUtil.getSession();
@@ -91,7 +91,7 @@ public class ScoreInfoDAO {
     }
 
     /*计算总的页数和记录数*/
-    public void CalculateTotalPageAndRecordNumber(Student_QQ studentNumber,CourseInfo_QQ courseNumber) {
+    public void CalculateTotalPageAndRecordNumber(Student_QQ287307421 studentNumber,CourseInfo_QQ254540457 courseNumber) {
         Session s = null;
         try {
             s = HibernateUtil.getSession();

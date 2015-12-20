@@ -1,15 +1,15 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=gb2312"%> 
 <%@ page import="com.shuangyulin.domain.ScoreInfo" %>
-<%@ page import="com.shuangyulin.domain.Student_QQ" %>
-<%@ page import="com.shuangyulin.domain.CourseInfo_QQ" %>
+<%@ page import="com.shuangyulin.domain.Student_QQ287307421" %>
+<%@ page import="com.shuangyulin.domain.CourseInfo_QQ254540457" %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     //获取所有的studentNumber信息
-    List<Student_QQ> student_QQList = (List<Student_QQ>)request.getAttribute("student_QQList");
+    List<Student_QQ287307421> student_QQ287307421List = (List<Student_QQ287307421>)request.getAttribute("student_QQ287307421List");
     //获取所有的courseNumber信息
-    List<CourseInfo_QQ> courseInfo_QQList = (List<CourseInfo_QQ>)request.getAttribute("courseInfo_QQList");
+    List<CourseInfo_QQ254540457> courseInfo_QQ254540457List = (List<CourseInfo_QQ254540457>)request.getAttribute("courseInfo_QQ254540457List");
     ScoreInfo scoreInfo = (ScoreInfo)request.getAttribute("scoreInfo");
 
 %>
@@ -40,12 +40,12 @@ body{margin:0px; font-size:12px; background-image:url(<%=basePath%>images/bg.jpg
     <td width=70%>
       <select name="scoreInfo.studentNumber.studentNumber" disabled>
       <%
-        for(Student_QQ student_QQ:student_QQList) {
+        for(Student_QQ287307421 student_QQ287307421:student_QQ287307421List) {
           String selected = "";
-          if(student_QQ.getStudentNumber().equals(scoreInfo.getStudentNumber().getStudentNumber()))
+          if(student_QQ287307421.getStudentNumber().equals(scoreInfo.getStudentNumber().getStudentNumber()))
             selected = "selected";
       %>
-          <option value='<%=student_QQ.getStudentNumber() %>' <%=selected %>><%=student_QQ.getStudentName() %></option>
+          <option value='<%=student_QQ287307421.getStudentNumber() %>' <%=selected %>><%=student_QQ287307421.getStudentName() %></option>
       <%
         }
       %>
@@ -57,12 +57,12 @@ body{margin:0px; font-size:12px; background-image:url(<%=basePath%>images/bg.jpg
     <td width=70%>
       <select name="scoreInfo.courseNumber.courseNumber" disabled>
       <%
-        for(CourseInfo_QQ courseInfo_QQ:courseInfo_QQList) {
+        for(CourseInfo_QQ254540457 courseInfo_QQ254540457:courseInfo_QQ254540457List) {
           String selected = "";
-          if(courseInfo_QQ.getCourseNumber().equals(scoreInfo.getCourseNumber().getCourseNumber()))
+          if(courseInfo_QQ254540457.getCourseNumber().equals(scoreInfo.getCourseNumber().getCourseNumber()))
             selected = "selected";
       %>
-          <option value='<%=courseInfo_QQ.getCourseNumber() %>' <%=selected %>><%=courseInfo_QQ.getCourseName() %></option>
+          <option value='<%=courseInfo_QQ254540457.getCourseNumber() %>' <%=selected %>><%=courseInfo_QQ254540457.getCourseName() %></option>
       <%
         }
       %>

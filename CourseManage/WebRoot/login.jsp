@@ -7,6 +7,89 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>教务报课管理系统登录</title>
+</head>
+
+
+
+
+<body  topmargin="150" leftmargin="100">
+<center>
+<h1>报课系统登录界面</h1>
+<br>
+<br>
+<link href="css/common1.css"type="text/css"rel="stylesheet">
+<style type="text/css">
+<!--
+body {
+background-image: url(<%=basePath %> images/fuda.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+-->
+table{
+text-align: center
+}
+.textSize{
+width: 120px;
+height: 15px
+}
+</style>
+<script type="text/javascript">
+//确定按钮
+function gogo(){
+	document.forms[0].submit();
+}
+//取消按钮
+function cancel(){
+	document.form[0].action="";
+}
+//忘记密码？
+function forget(){
+	document.form[0].submit();
+}
+</script>
+</head>
+<body>
+<form action="<%=basePath %>login/login_CheckLogin.action" method="post" name="form1">
+<table>
+<tr>
+<td colspan="2"><img src="<%=basePath %>images/login.gif" width="100" height="100"></td>
+</tr>
+<tr>
+<td>姓名：</td>
+<td><input class="textSize"type="text"name="admin.username">
+</tr>
+<tr>
+<td>密码：</td>
+<td><input class="textSize"type="password"name="admin.password">
+</tr>
+<tr>
+<td colspan="2">
+<br>
+<input type="image"src="<%=basePath %>images/dl.gif" width="50" height="18" onclick="gogo()">
+<input type="image"src="<%=basePath %>images/cancel.jpg" width="50" height="18" onclick="cancel()">
+<br>
+<br>
+<a href="foget.html"> <font size="1" color="blue" onclick="forget()">忘记密码？</font > </a>
+
+</td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+
+
+
+
+
+
+
+
+<%-- 
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>教务选课管理系统登录</title>
 <style type="text/css">
 <!--
@@ -70,3 +153,4 @@ body {
 
 </body>
 </html>
+--%>

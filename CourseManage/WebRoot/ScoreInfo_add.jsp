@@ -1,14 +1,14 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=gb2312"%>
-<%@ page import="com.shuangyulin.domain.Student_QQ" %>
-<%@ page import="com.shuangyulin.domain.CourseInfo_QQ" %>
+<%@ page import="com.shuangyulin.domain.Student_QQ287307421" %>
+<%@ page import="com.shuangyulin.domain.CourseInfo_QQ254540457" %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     //获取所有的studentNumber信息
-    List<Student_QQ> student_QQList = (List<Student_QQ>)request.getAttribute("student_QQList");
+    List<Student_QQ287307421> student_QQ287307421List = (List<Student_QQ287307421>)request.getAttribute("student_QQ287307421List");
     //获取所有的courseNumber信息
-    List<CourseInfo_QQ> courseInfo_QQList = (List<CourseInfo_QQ>)request.getAttribute("courseInfo_QQList");
+    List<CourseInfo_QQ254540457> courseInfo_QQ254540457List = (List<CourseInfo_QQ254540457>)request.getAttribute("courseInfo_QQ254540457List");
     String username=(String)session.getAttribute("username");
     if(username==null){
         response.getWriter().println("<script>top.location.href='" + basePath + "login/login_view.action';</script>");
@@ -47,9 +47,9 @@ function checkForm() {
     <td width=70%>
       <select name="scoreInfo.studentNumber.studentNumber">
       <%
-        for(Student_QQ student_QQ:student_QQList) {
+        for(Student_QQ287307421 student_QQ287307421:student_QQ287307421List) {
       %>
-          <option value='<%=student_QQ.getStudentNumber() %>'><%=student_QQ.getStudentName() %></option>
+          <option value='<%=student_QQ287307421.getStudentNumber() %>'><%=student_QQ287307421.getStudentName() %></option>
       <%
         }
       %>
@@ -61,9 +61,9 @@ function checkForm() {
     <td width=70%>
       <select name="scoreInfo.courseNumber.courseNumber">
       <%
-        for(CourseInfo_QQ courseInfo_QQ:courseInfo_QQList) {
+        for(CourseInfo_QQ254540457 courseInfo_QQ254540457:courseInfo_QQ254540457List) {
       %>
-          <option value='<%=courseInfo_QQ.getCourseNumber() %>'><%=courseInfo_QQ.getCourseName() %></option>
+          <option value='<%=courseInfo_QQ254540457.getCourseNumber() %>'><%=courseInfo_QQ254540457.getCourseName() %></option>
       <%
         }
       %>
