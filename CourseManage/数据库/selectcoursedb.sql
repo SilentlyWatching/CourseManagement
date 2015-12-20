@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : localhost
-Source Server Version : 50626
+Source Server         : localhost_3306
+Source Server Version : 50051
 Source Host           : localhost:3306
 Source Database       : selectcoursedb
 
 Target Server Type    : MYSQL
-Target Server Version : 50626
+Target Server Version : 50051
 File Encoding         : 65001
 
-Date: 2015-11-18 02:27:53
+Date: 2014-09-19 18:16:41
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -21,14 +21,14 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `username` varchar(20) NOT NULL,
-  `password` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`username`)
+  `password` varchar(20) default NULL,
+  PRIMARY KEY  (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('admin', 'admin');
+INSERT INTO `admin` VALUES ('a', 'a');
 
 -- ----------------------------
 -- Table structure for `t_classinfo`
@@ -36,13 +36,13 @@ INSERT INTO `admin` VALUES ('admin', 'admin');
 DROP TABLE IF EXISTS `t_classinfo`;
 CREATE TABLE `t_classinfo` (
   `classNumber` varchar(20) NOT NULL,
-  `className` varchar(20) DEFAULT NULL,
-  `classSpecialFieldNumber` varchar(20) DEFAULT NULL,
-  `classBirthDate` varchar(10) DEFAULT NULL,
-  `classTeacherCharge` varchar(12) DEFAULT NULL,
-  `classTelephone` varchar(20) DEFAULT NULL,
-  `classMemo` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`classNumber`),
+  `className` varchar(20) default NULL,
+  `classSpecialFieldNumber` varchar(20) default NULL,
+  `classBirthDate` varchar(10) default NULL,
+  `classTeacherCharge` varchar(12) default NULL,
+  `classTelephone` varchar(20) default NULL,
+  `classMemo` varchar(100) default NULL,
+  PRIMARY KEY  (`classNumber`),
   KEY `FK95BB201BA924E03B` (`classSpecialFieldNumber`),
   CONSTRAINT `FK95BB201BA924E03B` FOREIGN KEY (`classSpecialFieldNumber`) REFERENCES `t_specialfieldinfo` (`specialFieldNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -59,18 +59,18 @@ INSERT INTO `t_classinfo` VALUES ('2013050403', '2013级电子信息3班', '0504
 DROP TABLE IF EXISTS `t_collegeinfo`;
 CREATE TABLE `t_collegeinfo` (
   `collegeNumber` varchar(20) NOT NULL,
-  `collegeName` varchar(20) DEFAULT NULL,
-  `collegeBirthDate` varchar(10) DEFAULT NULL,
-  `collegeMan` varchar(10) DEFAULT NULL,
-  `collegeTelephone` varchar(20) DEFAULT NULL,
-  `collegeMemo` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`collegeNumber`)
+  `collegeName` varchar(20) default NULL,
+  `collegeBirthDate` varchar(10) default NULL,
+  `collegeMan` varchar(10) default NULL,
+  `collegeTelephone` varchar(20) default NULL,
+  `collegeMemo` varchar(100) default NULL,
+  PRIMARY KEY  (`collegeNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_collegeinfo
 -- ----------------------------
-INSERT INTO `t_collegeinfo` VALUES ('05', '信息工程学院', '2009-01-07', '张大树', '13959319852', '11111');
+INSERT INTO `t_collegeinfo` VALUES ('05', '信息工程学院', '2009-01-07', '张大树', '13959319852', '测试学院');
 
 -- ----------------------------
 -- Table structure for `t_courseinfo_qq254540457`
@@ -78,13 +78,13 @@ INSERT INTO `t_collegeinfo` VALUES ('05', '信息工程学院', '2009-01-07', '�
 DROP TABLE IF EXISTS `t_courseinfo_qq254540457`;
 CREATE TABLE `t_courseinfo_qq254540457` (
   `courseNumber` varchar(20) NOT NULL,
-  `courseName` varchar(20) DEFAULT NULL,
-  `courseTeacher` varchar(20) DEFAULT NULL,
-  `courseTime` varchar(40) DEFAULT NULL,
-  `coursePlace` varchar(40) DEFAULT NULL,
-  `courseScore` float DEFAULT NULL,
-  `courseMemo` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`courseNumber`),
+  `courseName` varchar(20) default NULL,
+  `courseTeacher` varchar(20) default NULL,
+  `courseTime` varchar(40) default NULL,
+  `coursePlace` varchar(40) default NULL,
+  `courseScore` float default NULL,
+  `courseMemo` varchar(100) default NULL,
+  PRIMARY KEY  (`courseNumber`),
   KEY `FK258A9AAB4FB4E18A` (`courseTeacher`),
   CONSTRAINT `FK258A9AAB4FB4E18A` FOREIGN KEY (`courseTeacher`) REFERENCES `t_teacher_qq287307421` (`teacherNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -92,22 +92,21 @@ CREATE TABLE `t_courseinfo_qq254540457` (
 -- ----------------------------
 -- Records of t_courseinfo_qq254540457
 -- ----------------------------
-INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC001', 'Internet技术与协议分析实验', 'TH001', '', '实践选修', '1', '24');
-INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC002', '&#160;IT企业项目实训', 'TH002', '', '实践选修', '2', '48');
-INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC003', '多媒体通信技术', 'TH001', '', '专业选修', '2', '32');
-INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC004', 'EDA技术', 'TH001', '', '专业方向（限选）1', '2', '32');
+INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC001', '安卓Android程序设计', 'TH001', '每周1下午1,2节', '6A-304', '3.5', '测试课程');
+INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC002', '计算机编译原理', 'TH002', '每周3上午1,2节', '7B-101', '3.6', '测试课程');
+INSERT INTO `t_courseinfo_qq254540457` VALUES ('KC003', 'flash动画设计', 'TH001', '每周3下午3,4节', '8B-202', '3.8', '测试课程');
 
 -- ----------------------------
 -- Table structure for `t_news`
 -- ----------------------------
 DROP TABLE IF EXISTS `t_news`;
 CREATE TABLE `t_news` (
-  `newsId` int(11) NOT NULL AUTO_INCREMENT,
-  `newsTitle` varchar(50) DEFAULT NULL,
+  `newsId` int(11) NOT NULL auto_increment,
+  `newsTitle` varchar(50) default NULL,
   `newsContent` longtext,
-  `newsDate` varchar(10) DEFAULT NULL,
-  `newsPhoto` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`newsId`)
+  `newsDate` varchar(10) default NULL,
+  `newsPhoto` varchar(50) default NULL,
+  PRIMARY KEY  (`newsId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -120,16 +119,16 @@ INSERT INTO `t_news` VALUES ('1', '测试新闻标题', '测试新新闻内容�
 -- ----------------------------
 DROP TABLE IF EXISTS `t_scoreinfo`;
 CREATE TABLE `t_scoreinfo` (
-  `scoreId` int(11) NOT NULL AUTO_INCREMENT,
-  `studentNumber` varchar(20) DEFAULT NULL,
-  `courseNumber` varchar(20) DEFAULT NULL,
-  `scoreValue` float DEFAULT NULL,
-  `studentEvaluate` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`scoreId`),
+  `scoreId` int(11) NOT NULL auto_increment,
+  `studentNumber` varchar(20) default NULL,
+  `courseNumber` varchar(20) default NULL,
+  `scoreValue` float default NULL,
+  `studentEvaluate` varchar(30) default NULL,
+  PRIMARY KEY  (`scoreId`),
   KEY `FK1534983543F8B840` (`studentNumber`),
   KEY `FK15349835CBB4EC4E` (`courseNumber`),
-  CONSTRAINT `FK1534983543F8B840` FOREIGN KEY (`studentNumber`) REFERENCES `t_student_qq287307421` (`studentNumber`),
-  CONSTRAINT `FK15349835CBB4EC4E` FOREIGN KEY (`courseNumber`) REFERENCES `t_courseinfo_qq254540457` (`courseNumber`)
+  CONSTRAINT `FK15349835CBB4EC4E` FOREIGN KEY (`courseNumber`) REFERENCES `t_courseinfo_qq254540457` (`courseNumber`),
+  CONSTRAINT `FK1534983543F8B840` FOREIGN KEY (`studentNumber`) REFERENCES `t_student_qq287307421` (`studentNumber`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -145,13 +144,13 @@ INSERT INTO `t_scoreinfo` VALUES ('3', '201305040318', 'KC001', '93', '好的啊
 DROP TABLE IF EXISTS `t_specialfieldinfo`;
 CREATE TABLE `t_specialfieldinfo` (
   `specialFieldNumber` varchar(20) NOT NULL,
-  `specialFieldName` varchar(20) DEFAULT NULL,
-  `specialCollegeNumber` varchar(20) DEFAULT NULL,
-  `specialBirthDate` varchar(10) DEFAULT NULL,
-  `specialMan` varchar(10) DEFAULT NULL,
-  `specialTelephone` varchar(20) DEFAULT NULL,
-  `specialMemo` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`specialFieldNumber`),
+  `specialFieldName` varchar(20) default NULL,
+  `specialCollegeNumber` varchar(20) default NULL,
+  `specialBirthDate` varchar(10) default NULL,
+  `specialMan` varchar(10) default NULL,
+  `specialTelephone` varchar(20) default NULL,
+  `specialMemo` varchar(100) default NULL,
+  PRIMARY KEY  (`specialFieldNumber`),
   KEY `FK30F0289A6AE335E2` (`specialCollegeNumber`),
   CONSTRAINT `FK30F0289A6AE335E2` FOREIGN KEY (`specialCollegeNumber`) REFERENCES `t_collegeinfo` (`collegeNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -161,21 +160,20 @@ CREATE TABLE `t_specialfieldinfo` (
 -- ----------------------------
 INSERT INTO `t_specialfieldinfo` VALUES ('0503', '计算机科学与技术', '05', '2011-01-12', '刘光钟', '15929491029', '测试专业');
 INSERT INTO `t_specialfieldinfo` VALUES ('0504', '电子信息技术', '05', '2010-01-19', '黄大河', '15939841190', '测试专业');
-INSERT INTO `t_specialfieldinfo` VALUES ('11', '11', '05', '2015-11-05', '11', '11', '11');
 
 -- ----------------------------
 -- Table structure for `t_studentselectcourseinfo`
 -- ----------------------------
 DROP TABLE IF EXISTS `t_studentselectcourseinfo`;
 CREATE TABLE `t_studentselectcourseinfo` (
-  `selectId` int(11) NOT NULL AUTO_INCREMENT,
-  `studentNumber` varchar(20) DEFAULT NULL,
-  `courseNumber` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`selectId`),
+  `selectId` int(11) NOT NULL auto_increment,
+  `studentNumber` varchar(20) default NULL,
+  `courseNumber` varchar(20) default NULL,
+  PRIMARY KEY  (`selectId`),
   KEY `FK47DAEAF543F8B840` (`studentNumber`),
   KEY `FK47DAEAF5CBB4EC4E` (`courseNumber`),
-  CONSTRAINT `FK47DAEAF543F8B840` FOREIGN KEY (`studentNumber`) REFERENCES `t_student_qq287307421` (`studentNumber`),
-  CONSTRAINT `FK47DAEAF5CBB4EC4E` FOREIGN KEY (`courseNumber`) REFERENCES `t_courseinfo_qq254540457` (`courseNumber`)
+  CONSTRAINT `FK47DAEAF5CBB4EC4E` FOREIGN KEY (`courseNumber`) REFERENCES `t_courseinfo_qq254540457` (`courseNumber`),
+  CONSTRAINT `FK47DAEAF543F8B840` FOREIGN KEY (`studentNumber`) REFERENCES `t_student_qq287307421` (`studentNumber`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -194,19 +192,19 @@ INSERT INTO `t_studentselectcourseinfo` VALUES ('6', '201305040318', 'KC003');
 DROP TABLE IF EXISTS `t_student_qq287307421`;
 CREATE TABLE `t_student_qq287307421` (
   `studentNumber` varchar(20) NOT NULL,
-  `studentName` varchar(12) DEFAULT NULL,
-  `studentPassword` varchar(30) DEFAULT NULL,
-  `studentSex` varchar(2) DEFAULT NULL,
-  `studentClassNumber` varchar(20) DEFAULT NULL,
-  `studentBirthday` varchar(10) DEFAULT NULL,
-  `studentState` varchar(20) DEFAULT NULL,
-  `studentPhoto` varchar(50) DEFAULT NULL,
-  `studentTelephone` varchar(20) DEFAULT NULL,
-  `studentEmail` varchar(30) DEFAULT NULL,
-  `studentQQ` varchar(20) DEFAULT NULL,
-  `studentAddress` varchar(100) DEFAULT NULL,
-  `studentMemo` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`studentNumber`),
+  `studentName` varchar(12) default NULL,
+  `studentPassword` varchar(30) default NULL,
+  `studentSex` varchar(2) default NULL,
+  `studentClassNumber` varchar(20) default NULL,
+  `studentBirthday` varchar(10) default NULL,
+  `studentState` varchar(20) default NULL,
+  `studentPhoto` varchar(50) default NULL,
+  `studentTelephone` varchar(20) default NULL,
+  `studentEmail` varchar(30) default NULL,
+  `studentQQ` varchar(20) default NULL,
+  `studentAddress` varchar(100) default NULL,
+  `studentMemo` varchar(100) default NULL,
+  PRIMARY KEY  (`studentNumber`),
   KEY `FKA1F0E11B97DC0CE2` (`studentClassNumber`),
   CONSTRAINT `FKA1F0E11B97DC0CE2` FOREIGN KEY (`studentClassNumber`) REFERENCES `t_classinfo` (`classNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -223,21 +221,21 @@ INSERT INTO `t_student_qq287307421` VALUES ('201305040318', '刘光霞', '123456
 DROP TABLE IF EXISTS `t_teacher_qq287307421`;
 CREATE TABLE `t_teacher_qq287307421` (
   `teacherNumber` varchar(20) NOT NULL,
-  `teacherName` varchar(12) DEFAULT NULL,
-  `teacherPassword` varchar(30) DEFAULT NULL,
-  `teacherSex` varchar(2) DEFAULT NULL,
-  `teacherBirthday` varchar(10) DEFAULT NULL,
-  `teacherArriveDate` varchar(10) DEFAULT NULL,
-  `teacherCardNumber` varchar(20) DEFAULT NULL,
-  `teacherPhone` varchar(20) DEFAULT NULL,
-  `teacherPhoto` varchar(50) DEFAULT NULL,
-  `teacherAddress` varchar(100) DEFAULT NULL,
-  `teacherMemo` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`teacherNumber`)
+  `teacherName` varchar(12) default NULL,
+  `teacherPassword` varchar(30) default NULL,
+  `teacherSex` varchar(2) default NULL,
+  `teacherBirthday` varchar(10) default NULL,
+  `teacherArriveDate` varchar(10) default NULL,
+  `teacherCardNumber` varchar(20) default NULL,
+  `teacherPhone` varchar(20) default NULL,
+  `teacherPhoto` varchar(50) default NULL,
+  `teacherAddress` varchar(100) default NULL,
+  `teacherMemo` varchar(100) default NULL,
+  PRIMARY KEY  (`teacherNumber`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_teacher_qq287307421
 -- ----------------------------
-INSERT INTO `t_teacher_qq287307421` VALUES ('TH001', '张栋', '123456', '男', '', '2010-01-01', 'zhangdong@fzu.edu.cn', '', 'upload/389c2000-6bad-4b06-ad81-d1e542df7f9a.jpg', '福大数计学院计算机系', '副教授');
-INSERT INTO `t_teacher_qq287307421` VALUES ('TH002', '王旭銮', '123456', '男', '2015-01-01', '2015-01-01', '87894548@qq.com', '15659437505', 'upload/e9207f7e-54da-4788-acb4-c07c1b8f499c.jpg', '福大数计学院计算机系', '');
+INSERT INTO `t_teacher_qq287307421` VALUES ('TH001', '张小美', '123456', '女', '1984-01-18', '2012-01-03', '513030198401182341', '15395891234', 'upload/de0188ed-d26e-4946-84e5-54027beb6b48.jpg', '四川达州aaa', '测试老师aaa');
+INSERT INTO `t_teacher_qq287307421` VALUES ('TH002', '吴亮', '123456', '男', '1962-01-10', '2013-01-08', '513412196201103412', '13593801934', 'upload/2e83f122-0296-4c21-9b51-75bb9919fa48.jpg', '四川南充', '测试老师');

@@ -41,54 +41,149 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
     <td height="28" background="images/main_40.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
         <td width="19%">&nbsp;</td>
-        <td width="81%" height="20"><span class="STYLE1">MENU</span></td>
+        <td width="81%" height="20"><span class="STYLE1">Info_inquiry </span></td>
       </tr>
     </table></td>
   </tr>
-   
-<tr>
-  <td valign="top"></td>
-    </tr>
-
-<tr>
-  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
-   <tr>
-   
-        </tr>
-        <tr>
-          <td background="images/main_51.gif" id="submenu2">
-		 </td>
-        </tr>
-      </table></td>
-    </tr>
-
-<tr>
-  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
-   <tr>
   
+  <%--  
+<tr>
+  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+   <td height="23" background="images/main_47.gif" id="imgmenu1" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(1)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+              <td width="18%">&nbsp;</td>
+              <td width="82%" class="STYLE1">college Inf</td>
+        </tr>
+          </table></td>
         </tr>
         <tr>
-          <td background="images/main_51.gif" id="submenu3">
+          <td background="images/main_51.gif" id="submenu1">
 		 <div class="sec_menu" >
 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              
+              <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>CollegeInfo/CollegeInfo_AddView.action';">3</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>CollegeInfo/CollegeInfo_QueryCollegeInfo.action';" >4</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
             </tr>
             <tr>
-              
+              <td height="5"><img src="images/main_52.gif" width="151" height="5" /></td>
+            </tr>
+          </table></div></td>
+        </tr>
+      </table></td>
+    </tr>
+--%>
+
+<tr>
+  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+   <td height="23" background="images/main_47.gif" id="imgmenu2" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(2)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+              <td width="18%">&nbsp;</td>
+              <td width="82%" class="STYLE1">SpecialFieldInfo</td>
+        </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="images/main_51.gif" id="submenu2">
+		 <div class="sec_menu" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>SpecialFieldInfo/SpecialFieldInfo_AddView.action';">SpecialFieldInfo_add</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>SpecialFieldInfo/SpecialFieldInfo_QuerySpecialFieldInfo.action';" >SpecialFieldInfo_inquiry</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="5"><img src="images/main_52.gif" width="151" height="5" /></td>
             </tr>
           </table></div></td>
         </tr>
       </table></td>
     </tr>
 
+<%-- 
+<tr>
+  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+   <td height="23" background="images/main_47.gif" id="imgmenu3" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(3)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+              <td width="18%">&nbsp;</td>
+              <td width="82%" class="STYLE1">class Inf</td>
+        </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="images/main_51.gif" id="submenu3">
+		 <div class="sec_menu" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>ClassInfo/ClassInfo_AddView.action';">999999</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>ClassInfo/ClassInfo_QueryClassInfo.action';" >99999</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="5"><img src="images/main_52.gif" width="151" height="5" /></td>
+            </tr>
+          </table></div></td>
+        </tr>
+      </table></td>
+    </tr>
+--%>
+
+<%--
 <tr>
   <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
    <tr>
    <td height="23" background="images/main_47.gif" id="imgmenu4" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(4)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
               <td width="18%">&nbsp;</td>
-              <td width="82%" class="STYLE1"></td>
+              <td width="82%" class="STYLE1">student Inf</td>
         </tr>
           </table></td>
         </tr>
@@ -102,13 +197,17 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                   <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                   <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Student_QQ/Student_QQ_AddView.action';">Course File Upload</span></td>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Student_QQ287307421/Student_QQ287307421_AddView.action';">1111111</span></td>
                       </tr>
                   </table></td>
                 </tr>
                 <tr>
-                  
-                  
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Student_QQ287307421/Student_QQ287307421_QueryStudent_QQ287307421.action';" >22222222</span></td>
+                      </tr>
+                  </table></td>
                 </tr>
               </table></td>
             </tr>
@@ -119,6 +218,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
         </tr>
       </table></td>
     </tr>
+--%>
 
 <tr>
   <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -126,7 +226,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
    <td height="23" background="images/main_47.gif" id="imgmenu5" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(5)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
               <td width="18%">&nbsp;</td>
-              <td width="82%" class="STYLE1"></td>
+              <td width="82%" class="STYLE1">TeacherInfo</td>
         </tr>
           </table></td>
         </tr>
@@ -140,7 +240,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                   <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                   <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Teacher_QQ/Teacher_QQ_AddView.action';">Teacher Add</span></td>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Teacher_QQ287307421/Teacher_QQ287307421_AddView.action';">TeacherInfo_add</span></td>
                       </tr>
                   </table></td>
                 </tr>
@@ -148,7 +248,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                   <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                   <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Teacher_QQ/Teacher_QQ_QueryTeacher_QQ.action';" >Teacher Information</span></td>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>Teacher_QQ287307421/Teacher_QQ287307421_QueryTeacher_QQ287307421.action';" >TeacherInfo_inquiry</span></td>
                       </tr>
                   </table></td>
                 </tr>
@@ -168,7 +268,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
    <td height="23" background="images/main_47.gif" id="imgmenu6" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(6)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
               <td width="18%">&nbsp;</td>
-              <td width="82%" class="STYLE1"></td>
+              <td width="82%" class="STYLE1">CourseInfo</td>
         </tr>
           </table></td>
         </tr>
@@ -182,7 +282,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                   <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                   <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>CourseInfo_QQ/CourseInfo_QQ_AddView.action';">Course Add</span></td>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>CourseInfo_QQ254540457/CourseInfo_QQ254540457_AddView.action';">CourseInfo_add</span></td>
                       </tr>
                   </table></td>
                 </tr>
@@ -190,7 +290,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                   <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                   <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>CourseInfo_QQ/CourseInfo_QQ_QueryCourseInfo_QQ.action';" >Course Information</span></td>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>CourseInfo_QQ254540457/CourseInfo_QQ254540457_QueryCourseInfo_QQ254540457.action';" >CourseInfo_inquiry</span></td>
                       </tr>
                   </table></td>
                 </tr>
@@ -205,21 +305,143 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
     </tr>
 
 <tr>
-  
+  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+   <td height="23" background="images/main_47.gif" id="imgmenu7" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(7)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+              <td width="18%">&nbsp;</td>
+              <td width="82%" class="STYLE1">SelectCourseInfo</td>
+        </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="images/main_51.gif" id="submenu7">
+		 <div class="sec_menu" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>StudentSelectCourseInfo/StudentSelectCourseInfo_AddView.action';">SelectCourseInfo_add</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>StudentSelectCourseInfo/StudentSelectCourseInfo_QueryStudentSelectCourseInfo.action';" >SelectCourseInfo_inquiry</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="5"><img src="images/main_52.gif" width="151" height="5" /></td>
+            </tr>
+          </table></div></td>
+        </tr>
+      </table></td>
     </tr>
-
+<%-- 
 <tr>
-  
+  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+   <td height="23" background="images/main_47.gif" id="imgmenu8" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(8)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+              <td width="18%">&nbsp;</td>
+              <td width="82%" class="STYLE1"> xueshengxuanke</td>
+        </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="images/main_51.gif" id="submenu8">
+		 <div class="sec_menu" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>ScoreInfo/ScoreInfo_AddView.action';">fill in</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>ScoreInfo/ScoreInfo_QueryScoreInfo.action';" >inquiry</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="5"><img src="images/main_52.gif" width="151" height="5" /></td>
+            </tr>
+          </table></div></td>
+        </tr>
+      </table></td>
     </tr>
+--%>
 
+<%-- 
 <tr>
-  
+  <td valign="top"><table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+   <tr>
+   <td height="23" background="images/main_47.gif" id="imgmenu9" class="menu_title" onMouseOver="this.className='menu_title2';" onClick="showsubmenu(9)" onMouseOut="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+              <td width="18%">&nbsp;</td>
+              <td width="82%" class="STYLE1">news</td>
+        </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td background="images/main_51.gif" id="submenu9">
+		 <div class="sec_menu" >
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>News/News_AddView.action';">44444</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+                <tr>
+                  <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
+                  <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='<%=basePath %>News/News_QueryNews.action';" >55555</span></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="5"><img src="images/main_52.gif" width="151" height="5" /></td>
+            </tr>
+          </table></div></td>
+        </tr>
+      </table></td>
     </tr>
+--%>
+
+ 
       <tr>
-        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <td valign="top"><table width="151" border="0" align="center" cellpadding="0">
           <tr>
             <td height="23" background="images/main_47.gif" id="imgmenu500" class="menu_title" onmouseover="this.className='menu_title2';" onclick="showsubmenu(500)" onmouseout="this.className='menu_title';" style="cursor:hand"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-              
+                <tr>
+                  <td width="18%">&nbsp;</td>
+                  <td width="82%" class="STYLE1">Modify</td>
+                </tr>
             </table></td>
           </tr>
           <tr>
@@ -232,7 +454,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                           <td width="16%" height="25"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                           <td width="84%" height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                               <tr>
-                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='password_modify.jsp';">Modify the password</span></td>
+                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='password_modify.jsp';">change password</span></td>
                               </tr>
                           </table></td>
                         </tr>
@@ -240,7 +462,7 @@ document.write("<div id=tt style=height:"+he+";overflow:hidden>");
                           <td height="23"><div align="center"><img src="images/left.gif" width="10" height="10" /></div></td>
                           <td height="23"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                               <tr>
-                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='logout.jsp';">Sign out</span></td>
+                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'"><span class="STYLE3" onclick="javascript:parent.document.getElementById('ContentFrame').src='logout.jsp';">sign out</span></td>
                               </tr>
                           </table></td>
                         </tr>

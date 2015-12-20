@@ -1,19 +1,19 @@
 <%@ page language="java" import="java.util.*"  contentType="text/html;charset=gb2312"%> 
 <%@ page import="com.shuangyulin.domain.StudentSelectCourseInfo" %>
-<%@ page import="com.shuangyulin.domain.Student_QQ" %>
-<%@ page import="com.shuangyulin.domain.CourseInfo_QQ" %>
+<%@ page import="com.shuangyulin.domain.Student_QQ287307421" %>
+<%@ page import="com.shuangyulin.domain.CourseInfo_QQ254540457" %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
     List<StudentSelectCourseInfo> studentSelectCourseInfoList = (List<StudentSelectCourseInfo>)request.getAttribute("studentSelectCourseInfoList");
     //获取所有的studentNumber信息
-    List<Student_QQ> student_QQList = (List<Student_QQ>)request.getAttribute("student_QQList");
-    Student_QQ student_QQ = (Student_QQ)request.getAttribute("student_QQ");
+    List<Student_QQ287307421> student_QQ287307421List = (List<Student_QQ287307421>)request.getAttribute("student_QQ287307421List");
+    Student_QQ287307421 student_QQ287307421 = (Student_QQ287307421)request.getAttribute("student_QQ287307421");
 
     //获取所有的courseNumber信息
-    List<CourseInfo_QQ> courseInfo_QQList = (List<CourseInfo_QQ>)request.getAttribute("courseInfo_QQList");
-    CourseInfo_QQ courseInfo_QQ = (CourseInfo_QQ)request.getAttribute("courseInfo_QQ");
+    List<CourseInfo_QQ254540457> courseInfo_QQ254540457List = (List<CourseInfo_QQ254540457>)request.getAttribute("courseInfo_QQ254540457List");
+    CourseInfo_QQ254540457 courseInfo_QQ254540457 = (CourseInfo_QQ254540457)request.getAttribute("courseInfo_QQ254540457");
 
     int currentPage =  (Integer)request.getAttribute("currentPage"); //当前页
     int totalPage =   (Integer)request.getAttribute("totalPage");  //一共多少页
@@ -133,9 +133,9 @@ function changepage(totalPage)
 学生对象：<select name="studentNumber.studentNumber">
  				<option value="">不限制</option>
  				<%
- 					for(Student_QQ student_QQTemp:student_QQList) {
+ 					for(Student_QQ287307421 student_QQ287307421Temp:student_QQ287307421List) {
  			   %>
- 			   <option value="<%=student_QQTemp.getStudentNumber() %>"><%=student_QQTemp.getStudentName() %></option>
+ 			   <option value="<%=student_QQ287307421Temp.getStudentNumber() %>"><%=student_QQ287307421Temp.getStudentName() %></option>
  			   <%
  					}
  				%>
@@ -143,9 +143,9 @@ function changepage(totalPage)
 课程对象：<select name="courseNumber.courseNumber">
  				<option value="">不限制</option>
  				<%
- 					for(CourseInfo_QQ courseInfo_QQTemp:courseInfo_QQList) {
+ 					for(CourseInfo_QQ254540457 courseInfo_QQ254540457Temp:courseInfo_QQ254540457List) {
  			   %>
- 			   <option value="<%=courseInfo_QQTemp.getCourseNumber() %>"><%=courseInfo_QQTemp.getCourseName() %></option>
+ 			   <option value="<%=courseInfo_QQ254540457Temp.getCourseNumber() %>"><%=courseInfo_QQ254540457Temp.getCourseName() %></option>
  			   <%
  					}
  				%>
@@ -166,7 +166,7 @@ function changepage(totalPage)
             </div></td> -->
             <td width="3%" height="22" background="<%=basePath %>images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">序号</span></div></td>
             <td  height="22" background="<%=basePath %>images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">记录编号</span></div></td>
-            <td  height="22" background="<%=basePath %>images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">学生对象</span></div></td>
+            <td  height="22" background="<%=basePath %>images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">教师对象</span></div></td>
             <td  height="22" background="<%=basePath %>images/bg.gif" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">课程对象</span></div></td>
             <td width="10%" height="22" background="<%=basePath %>images/bg.gif" bgcolor="#FFFFFF" class="STYLE1"><div align="center">基本操作</div></td>
           </tr>

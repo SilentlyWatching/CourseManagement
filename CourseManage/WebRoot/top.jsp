@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+
 <style type="text/css">
 <!--
 body {
@@ -83,22 +83,15 @@ window.onload = tick;
       <tr>
         <td height="38"><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td><img src="images/main_09.jpg" width="170" height="38" style="width: 133px; height: 34px"/></td>
+            
             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="77%" height="25" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td width="50" height="19"><div align="center"></div></td>
-                    <td width="50"><div align="center"></div></td>
-                    <td width="50"><div align="center"></div></td>
-                    <td width="50"><div align="center"></div></td>
-                    <td width="50"><div align="center"></div></td>
-                    <td width="26"><div align="center"></div></td>
-                    <td width="100"><div align="center"><!--<img src="images/main_22.gif" width="98" height="19">--></div></td>
-                    <td>&nbsp;</td>
+                   
                   </tr>
                 </table></td>
-                <td width="320" valign="bottom"  nowrap="nowrap"><div align="right"><span class="STYLE1"><span class="STYLE2"></span><font color=blue><%=session.getAttribute("username") %></font>&nbsp;<span id="Clock"></span></span></div></td>
+                <td width="320" valign="bottom"  nowrap="nowrap"><div align="right"><span class="STYLE1"><span class="STYLE2"></span> <font color=blue><%=session.getAttribute("username") %></font>&nbsp;<span id="Clock"></span></span></div></td>
               </tr>
             </table></td>
             <td width="21"><img src="images/main_11.gif" width="21" height="38"></td>
@@ -123,7 +116,7 @@ window.onload = tick;
         <td width="177" height="28" background="images/main_32.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="20%"  height="22">&nbsp;</td>
-            <td width="59%" valign="bottom"><div align="center" class="STYLE1">Welcome!<%=session.getAttribute("username") %></div></td>
+            <td width="59%" valign="bottom"><div align="center" class="STYLE1"> Welcome <%=session.getAttribute("username") %></div></td>
             <td width="21%">&nbsp;</td>
           </tr>
         </table></td>
@@ -131,7 +124,7 @@ window.onload = tick;
           <tr>
             <td width="65" height="28"><table width="100%" border="0" cellspacing="0" cellpadding="0">
          
-      
+           
           </tr>
         </table></td>
         <td width="21"><img src="images/main_37.gif" width="21" height="28"></td>
